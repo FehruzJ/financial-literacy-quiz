@@ -3,7 +3,7 @@ const quizData = [
     {
       question: "What is net worth?",
       options: [
-        "The total value of your assets minus liabilities.",
+        "The total value of your assets minus liabilities.",  // Correct
         "The total amount of money you earn annually.",
         "The amount of money in your savings account.",
         "The sum of your investments only."
@@ -12,143 +12,157 @@ const quizData = [
     },
     {
       question: "Which is a common budgeting method?",
+      // We reorder options so that the 50/30/20 rule appears as option B.
       options: [
-        "The 50/30/20 rule.",
-        "The 40/40/20 rule.",
+        "The 70/20/10 rule.",
+        "The 50/30/20 rule.", // Correct
         "The 60/20/20 rule.",
-        "The 70/20/10 rule."
+        "The 40/40/20 rule."
       ],
-      correct: 0
+      correct: 1
     },
     {
       question: "What does APR stand for?",
+      // Reorder options so that "Annual Percentage Rate" is option C.
       options: [
-        "Annual Percentage Rate",
-        "Annual Performance Ratio",
-        "Average Percentage Rate",
-        "Annual Profit Ratio"
+        "Annual Profit Ratio.",
+        "Annual Performance Ratio.",
+        "Annual Percentage Rate.", // Correct
+        "Average Percentage Rate."
       ],
-      correct: 0
+      correct: 2
     },
     {
       question: "What is compound interest?",
+      // Reorder so that the correct answer is option D.
       options: [
-        "Interest calculated on the principal plus previously earned interest.",
         "Interest calculated only on the initial principal.",
+        "A fixed interest rate that never changes.",
         "Interest paid by the bank on deposits.",
-        "A fixed interest rate that never changes."
+        "Interest calculated on the principal plus previously earned interest." // Correct
       ],
-      correct: 0
+      correct: 3
     },
     {
       question: "What is diversification in investing?",
+      // Correct answer (investing in a variety of assets) as option B.
       options: [
-        "Investing in a variety of assets to reduce risk.",
-        "Investing all money in one asset.",
         "Keeping money in a single currency.",
+        "Investing in a variety of assets to reduce risk.", // Correct
+        "Investing all money in one asset.",
         "Avoiding investments altogether."
       ],
-      correct: 0
+      correct: 1
     },
     {
       question: "What is an emergency fund?",
+      // Correct answer is option C.
       options: [
-        "Savings set aside to cover unexpected expenses or emergencies.",
+        "A loan taken out for emergencies.",
         "Money used exclusively for entertainment.",
-        "A long-term investment vehicle.",
-        "A loan taken out for emergencies."
+        "Savings set aside to cover unexpected expenses or emergencies.", // Correct
+        "A long-term investment vehicle."
       ],
-      correct: 0
+      correct: 2
     },
     {
       question: "Which of the following is considered a liability?",
+      // Correct answer: Credit card debt as option D.
       options: [
-        "Credit card debt.",
-        "Savings account balance.",
         "Home equity.",
-        "Stock investments."
+        "Stock investments.",
+        "Savings account balance.",
+        "Credit card debt." // Correct
       ],
-      correct: 0
+      correct: 3
     },
     {
       question: "What does ROI stand for?",
+      // Correct answer: "Return on Investment" as option C.
       options: [
-        "Return on Investment.",
         "Rate of Interest.",
         "Ratio of Income.",
+        "Return on Investment.", // Correct
         "Revenue on Inventory."
       ],
-      correct: 0
+      correct: 2
     },
     {
       question: "What is a stock?",
+      // Correct answer is option B.
       options: [
-        "A share in the ownership of a company.",
         "A type of government bond.",
-        "A form of bank savings account.",
-        "A loan provided to a company."
+        "A share in the ownership of a company.", // Correct
+        "A loan provided to a company.",
+        "A form of bank savings account."
       ],
-      correct: 0
+      correct: 1
     },
     {
       question: "What is inflation?",
+      // Correct answer is option C.
       options: [
-        "The rate at which the general level of prices for goods and services is rising.",
         "A decrease in the cost of goods and services.",
         "The profit margin of a company.",
+        "The rate at which the general level of prices for goods and services is rising.", // Correct
         "A type of investment fund."
       ],
-      correct: 0
+      correct: 2
     },
     {
       question: "What is a mutual fund?",
+      // Correct answer is option B.
       options: [
-        "A pool of funds collected from many investors for investing in securities.",
-        "A type of savings account.",
         "A bank loan for investment purposes.",
-        "An investment in individual stocks."
+        "A pool of funds collected from many investors for investing in securities.", // Correct
+        "An investment in individual stocks.",
+        "A type of savings account."
       ],
-      correct: 0
+      correct: 1
     },
     {
       question: "What is a bond?",
+      // Correct answer is option D.
       options: [
-        "A loan from an investor to a corporation or government.",
         "A share in the ownership of a company.",
+        "A savings account with fixed interest.",
         "A type of mutual fund.",
-        "A savings account with fixed interest."
+        "A loan from an investor to a corporation or government." // Correct
       ],
-      correct: 0
+      correct: 3
     },
     {
       question: "What is liquidity?",
+      // Correct answer is option C.
       options: [
-        "The ease with which an asset can be converted to cash.",
-        "The amount of profit a company makes.",
         "The measure of a company's growth.",
+        "The amount of profit a company makes.",
+        "The ease with which an asset can be converted to cash.", // Correct
         "A type of investment risk."
       ],
-      correct: 0
+      correct: 2
     },
     {
       question: "What is a credit score?",
+      // Correct answer is option C.
       options: [
-        "A numerical representation of an individual's creditworthiness.",
-        "A measurement of how much money one earns.",
         "An indicator of an individual's net worth.",
-        "A score assigned to companies based on their performance."
+        "A score assigned to companies based on their performance.",
+        "A numerical representation of an individual's creditworthiness.", // Correct
+        "A measurement of how much money one earns."
       ],
-      correct: 0
+      correct: 2
     },
     {
       question: "What is a budget?",
+      // Correct answer is option B.
       options: [
-        "A plan for how you will spend and save your money.",
         "An investment portfolio.",
+        "A plan for how you will spend and save your money.", // Correct
         "A tool for calculating interest rates.",
         "A type of bank account."
       ],
-      correct: 0
+      correct: 1
     }
   ];
   
@@ -174,7 +188,7 @@ const quizData = [
     // Clear previous content
     quizContent.innerHTML = "";
     
-    // Check if all questions have been answered (handled in finish)
+    // If all questions have been answered, show results
     if (currentQuestionIndex >= quizData.length) {
       showResults();
       return;
@@ -220,7 +234,7 @@ const quizData = [
     const navContainer = document.createElement("div");
     navContainer.className = "nav-buttons";
     
-    // Previous button (only show if not the first question)
+    // Previous button (if not the first question)
     if (currentQuestionIndex > 0) {
       const prevBtn = document.createElement("button");
       prevBtn.textContent = "Previous";
@@ -257,7 +271,7 @@ const quizData = [
   }
   
   function saveAnswer() {
-    // Get selected answer for the current question
+    // Get the selected answer for the current question
     const selectedOption = document.querySelector('input[name="option"]:checked');
     if (!selectedOption) {
       alert("Please select an answer!");
