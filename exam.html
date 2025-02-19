@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Financial Literacy Quiz - Exam</title>
+  <link rel="stylesheet" href="exam.css" />
+</head>
+<body>
+  <div class="exam-page">
+    <!-- Header with gradient, title, progress bar, and question counter -->
+    <header class="header">
+      <h1>Financial Literacy Quiz</h1>
+      <div class="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+      <div class="question-counter">
+        Question <span id="current-question-number">1</span> of <span id="total-questions">3</span>
+      </div>
+    </header>
+
+    <!-- Main content container for quiz and results -->
+    <main class="exam-content">
+      <div id="quiz-container">
+        <!-- Quiz content will be injected here -->
+        <div id="quiz-content"></div>
+      </div>
+      <div id="result-container" style="display: none;">
+        <h2>Your Results</h2>
+        <p id="score"></p>
+        <p id="feedback"></p>
+        <div class="result-buttons">
+          <button onclick="restartQuiz()">Restart Quiz</button>
+          <button onclick="location.href='index.html'">Back to Home</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Financial Literacy Quiz - Exam</title>
+  <link rel="stylesheet" href="exam.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="quiz-container">
+      <h1>Financial Literacy Quiz</h1>
+      <div id="quiz-content">
+      </div>
+    </div>
+    <div id="result-container" style="display: none;">
+      <h2>Your Results</h2>
+      <p id="score"></p>
+      <p id="feedback"></p>
+      <button onclick="restartQuiz()">Restart Quiz</button>
+      <button onclick="location.href='index.html'">Back to Home</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> -->
