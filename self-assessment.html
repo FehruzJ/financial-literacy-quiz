@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spending Habits Self-Assessment</title>
+  <link rel="stylesheet" href="self-assessment.css">
+</head>
+<body>
+  <div class="assessment-page">
+    <header class="header">
+      <h1>Spending Habits Self-Assessment</h1>
+      <p>Discover your spending profile and get personalized tips to improve your money management.</p>
+    </header>
+    
+    <div id="assessment-container">
+      <div id="assessment-content">
+        <!-- Questions will be injected here -->
+      </div>
+      
+      <!-- Results container -->
+      <div id="result-container" style="display:none;">
+        <h2>Your Spending Profile</h2>
+        <p id="profile"></p>
+        <p id="advice"></p>
+        <div class="result-buttons">
+          <button onclick="restartAssessment()">Restart Assessment</button>
+          <button onclick="location.href='index.html'">Back to Home</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="self-assessment.js"></script>
+</body>
+</html>

@@ -154,3 +154,114 @@ button:hover {
     padding: 20px;
   }
 }
+
+/* ... existing CSS ... */
+
+/* Question Navigator Wrapper */
+#question-navigator-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.navigator-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Question Navigator */
+#question-navigator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#question-navigator button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e0e0e0;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+#question-navigator button:hover {
+  transform: scale(1.1);
+  background-color: #ccc;
+}
+
+#question-navigator button.answered {
+  background-color: #66bb6a;
+  color: #fff;
+}
+
+#question-navigator button.current {
+  background-color: #ff9800;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* --- Existing CSS remains --- */
+
+/* Review Container Styling */
+#review-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+#review-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#review-content {
+  max-height: 60vh;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.review-question {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.review-question h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.review-question p {
+  margin: 5px 0;
+}
+
+.review-buttons {
+  text-align: center;
+}
+
+.review-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff9800;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.review-buttons button:hover {
+  background-color: #e68900;
+  transform: scale(1.05);
+}
+

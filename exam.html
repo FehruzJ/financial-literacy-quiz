@@ -15,9 +15,15 @@
         <div id="progress-bar"></div>
       </div>
       <div class="question-counter">
-        Question <span id="current-question-number">1</span> of <span id="total-questions">3</span>
+        Question <span id="current-question-number">1</span> of <span id="total-questions">15</span>
       </div>
     </header>
+    
+    <!-- Question Navigator (if you want to keep it) -->
+    <div id="question-navigator-wrapper">
+      <p class="navigator-title">Jump to Question:</p>
+      <div id="question-navigator"></div>
+    </div>
 
     <!-- Main content container for quiz and results -->
     <main class="exam-content">
@@ -32,38 +38,22 @@
         <div class="result-buttons">
           <button onclick="restartQuiz()">Restart Quiz</button>
           <button onclick="location.href='index.html'">Back to Home</button>
+          <button onclick="reviewAnswers()">Review Answers</button>
         </div>
       </div>
+      
+      <!-- New Review Container -->
+      <div id="review-container" style="display: none;">
+        <h2>Review Your Answers</h2>
+        <div id="review-content"></div>
+        <div class="review-buttons">
+          <button onclick="goBackToResults()">Back to Results</button>
+          <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+      </div>
+      
     </main>
   </div>
   <script src="script.js"></script>
 </body>
 </html>
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Financial Literacy Quiz - Exam</title>
-  <link rel="stylesheet" href="exam.css" />
-</head>
-<body>
-  <div class="container">
-    <div id="quiz-container">
-      <h1>Financial Literacy Quiz</h1>
-      <div id="quiz-content">
-      </div>
-    </div>
-    <div id="result-container" style="display: none;">
-      <h2>Your Results</h2>
-      <p id="score"></p>
-      <p id="feedback"></p>
-      <button onclick="restartQuiz()">Restart Quiz</button>
-      <button onclick="location.href='index.html'">Back to Home</button>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html> -->
