@@ -59,6 +59,14 @@ body, html {
   margin-bottom: 40px;
 }
 
+/* Button Group for Hero Buttons */
+.button-group {
+  display: flex;
+  gap: 20px;       /* Space between buttons */
+  justify-content: center;
+}
+
+/* Hero Button */
 .hero-content button {
   background-color: #ff9800;
   color: #fff;
@@ -77,31 +85,31 @@ body, html {
 
 /* Scroll Indicator */
 .scroll-indicator {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-  }
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
   
-  .scroll-indicator .arrow {
-    font-size: 2rem;
-    animation: bounce 2s infinite;
-    color: #fff;
+.scroll-indicator .arrow {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  color: #fff;
+}
+
+/* Bounce Animation (vertical only) */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  
-  /* Bounce Animation (vertical only) */
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-10px);
-    }
-    60% {
-      transform: translateY(-5px);
-    }
-  }  
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}  
 
 /* Info Section */
 .info-section {
